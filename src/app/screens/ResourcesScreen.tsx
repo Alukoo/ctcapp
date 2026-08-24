@@ -219,9 +219,9 @@ export const OfferingTitheScreen = () => (
   <View style={{ flex: 1, backgroundColor: '#FAFAFA', padding: 24 }}>
     <Text style={{ fontSize: 22, fontWeight: '700', color: '#FFD600', marginBottom: 16 }}>Offering & Tithe</Text>
     <Text style={{ fontSize: 16, color: '#222', marginBottom: 12 }}>You can give your offering and tithe via:</Text>
-    <Text style={{ fontSize: 16, color: '#222', marginBottom: 8 }}>Bank: Faith Bank</Text>
-    <Text style={{ fontSize: 16, color: '#222', marginBottom: 8 }}>Account Name: Curvy Church</Text>
-    <Text style={{ fontSize: 16, color: '#222', marginBottom: 8 }}>Account Number: 1234567890</Text>
+    <Text style={{ fontSize: 16, color: '#222', marginBottom: 8 }}>Bank: FCMB</Text>
+    <Text style={{ fontSize: 16, color: '#222', marginBottom: 8 }}>Account Name: Christ Triumphant Church </Text>
+    <Text style={{ fontSize: 16, color: '#222', marginBottom: 8 }}>Account Number: 0300321011</Text>
     <Text style={{ fontSize: 16, color: '#222', marginTop: 16 }}>Thank you for your generosity!</Text>
   </View>
 );

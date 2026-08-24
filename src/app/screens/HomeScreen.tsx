@@ -108,12 +108,14 @@ const HomeScreen = () => {
               <Text style={[styles.title, { backgroundColor: 'transparent' }]}>Welcome</Text>
             }
           >
-            <LinearGradient
-              colors={["#1D6FFF", "#6B9FFF"]}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.gradientText}
-            />
+            <View style={styles.gradientText}>
+              <LinearGradient
+                colors={["#1756A9", "#4A90E2"]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={StyleSheet.absoluteFill}
+              />
+            </View>
           </MaskedView>
           <Text style={styles.date}>
             {new Date().toLocaleDateString("en-US", {
@@ -125,12 +127,13 @@ const HomeScreen = () => {
           </Text>
         </View>
 
-        <LinearGradient
-          colors={["#1D6FFF", "#1056FF"]}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 1 }}  
-          style={styles.dailyVerseContainer}
-        >
+        <View style={styles.dailyVerseContainer}>
+          <LinearGradient
+            colors={["#1756A9", "#003366"]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={StyleSheet.absoluteFill}
+          />
           <View style={styles.verseIconContainer}>
             <BookOpen color="#FFFFFF" size={28} />
           </View>
@@ -139,7 +142,7 @@ const HomeScreen = () => {
             {dailyVerse.text || "Loading verse..."}
           </Text>
           <Text style={styles.verseReference}>{dailyVerse.reference}</Text>
-        </LinearGradient>
+        </View>
 
         <View style={styles.eventsSection}>
           <Text style={styles.eventsSectionTitle}>Church Events</Text>
@@ -294,7 +297,7 @@ const styles = StyleSheet.create({
     width: 10,
     height: 10,
     borderRadius: 5,
-    backgroundColor: "#1D6FFF",
+    backgroundColor: "#1756A9",
     marginRight: 12,
     marginTop: 4,
     flexShrink: 0,

@@ -11,7 +11,8 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ctc.app"
     },
     "web": {
       "favicon": ""

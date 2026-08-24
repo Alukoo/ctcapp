@@ -10,7 +10,7 @@ import {
   Info,
   Share2
 } from "lucide-react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export function ResourcesPage() {
   const resourceSections = [
